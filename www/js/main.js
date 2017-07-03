@@ -44,3 +44,15 @@ var app = {
 };
 
 app.initialize();
+var rand = Math.floor( Math.random() * 3 ) ;
+document.getElementById('char').src = "img/char"+(rand+1)+".png";
+console.log(document.getElementById('char').src = "img/char"+(rand+1)+".png");
+while(1){
+    var rand2 = Math.floor( Math.random() * 11706 ) ;
+    if (55>array[rand2][0].length) {
+        break;
+    }
+}
+document.getElementById("char_word").innerHTML = array[rand2][0];   
+document.getElementById("anime_name").innerHTML = "<b>タイトル:</b><br>"+array[rand2][2];   
+document.getElementById("char_name").innerHTML = "<b>キャラ名:</b><br>"+array[rand2][1];

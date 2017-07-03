@@ -23,24 +23,32 @@
         <meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
         <title>アニメ名言気分</title>
     </head>
-    <body>
+    <body onload="main()">
         <div>
         <center>
             <br>
             <br>
-            <img src="img/title_image.png" alt="" width="90%">
-            <img src="img/main_image.png" alt="">        
+            <div class="example">
+            <img src="img/hukidasi.png" alt="" width="90%">
+              <p id="char_word"></p> 
+            </div>
+            <img id="char" src="img/char1.png" alt="">  
+            <p id="anime_name"></p>      
+            <p id="char_name"></p>      
         </center>
 <!--             <h1>アニメ名言気分</h1>
  -->            <div id="deviceready" class="blink">
-        <center><a href="main.html"><p id="btn" class="event listening" style="display: block"><img src="img/title_button.png" alt="" width="80%"></p></a></center>
-                 
+         <center>
+                <a href="main.html"><p id="btn" class="event listening" style="display: block"><img src="img/next.png" alt="" width="80%"></p></a>     
+            </center>
+ 
             </div>
         </div>
         <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/array.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
     </body>
 </html>

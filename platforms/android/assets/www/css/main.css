@@ -114,11 +114,32 @@ h1 {
     -webkit-animation:fade 3000ms infinite;
 }
 body{
-    background-image:url(../img/backgroung_image.png);
+    background-image:url(../img/orange_bg.png);
     background-repeat: no-repeat;
     background-size: cover;
+}
+#char{
+       float: right;
+       width: 50%;         
 }
 #btn{
     display: block !important;
 }
+.example {/*親div*/
+  position: relative;/*相対配置*/
+  }
+
+.example p {
+  width: 70%;
+  position: absolute;/*絶対配置*/
+  color: black;/*文字は白に*/
+  text-align: center;
+  top: 15%;
+  left: 15%;
+    font-size: 20px;  
+}
+
+.example img {
+  width: 100%;
+  }
 
